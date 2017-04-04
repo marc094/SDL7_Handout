@@ -4,6 +4,7 @@
 #define MAX_COLLIDERS 50
 
 #include "Module.h"
+#include "p2Point.h"
 
 enum COLLIDER_TYPE
 {
@@ -37,6 +38,7 @@ struct Collider
 	}
 
 	bool CheckCollision(const SDL_Rect& r) const;
+	bool CheckCollisionPoint(const iPoint& r) const;
 };
 
 class ModuleCollision : public Module

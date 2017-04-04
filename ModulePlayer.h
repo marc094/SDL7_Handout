@@ -16,6 +16,7 @@ public:
 
 	bool Start();
 	update_status Update();
+	void OnCollision(Collider*, Collider*);
 	bool CleanUp();
 
 public:
@@ -26,6 +27,7 @@ public:
 	Animation up;
 	Animation down;
 	iPoint position;
+	Collider* collider;
 };
 
 #endif
