@@ -110,5 +110,5 @@ update_status ModulePlayer::Update()
 
 // TODO 4: Detect collision with a wall. If so, go back to intro screen.
 void ModulePlayer::OnCollision(Collider* c1, Collider* c2) {
-	position.y = c2->rect.y -14;
+	position.y = c2->rect.y - 14;
 }
